@@ -1,0 +1,125 @@
+.meeting-section {
+    background-color: $darkBlue;
+
+    #meeting {
+        font-size: 1.6rem;
+
+        &>div {
+            width: 80rem;
+            margin: 0 auto;
+            padding: 10rem 0;
+
+            &>h1 {
+                color: #fff;
+                font-size: 10rem;
+                font-weight: 500;
+                font-family: 'sora';
+                margin-top: 2rem;
+                line-height: 10rem;
+            }
+
+            &>form {
+                background-color: #33394B;
+                padding: 5rem;
+                margin-top: 4rem;
+                // border: 1px solid red;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+
+                &>p {
+                    color: #fff;
+                }
+
+                &>label {
+                    padding: .5rem 0;
+                    color: $lightOrange;
+                    margin-top: 1.5rem;
+                    font-weight: 300;
+                }
+
+                &>input {
+                    padding: 1rem;
+                    outline: none;
+                }
+
+                &>select{
+                    padding: 1rem;
+                    outline: none;
+                }
+
+                &>textarea{
+                    margin-bottom: 2rem;
+                    padding: 1rem;
+                    resize: vertical;
+                    outline: none;
+                }
+
+                &>a {
+                    display: inline-block;
+                    width: 100%;
+                    color: $white;
+                    outline: none;
+                    border: none;
+                    background-color: $orange;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    padding: 1.5rem 3rem;
+                    border-radius: .5rem;
+                    text-align: center;
+                    transition: all .4s;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $darkOrange;
+                        box-shadow: .2rem .2rem 0 $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// @media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .meeting-section{
+        #meeting{
+            &>div{
+                width: 100%;
+
+                &>h1{
+                    font-size: 6rem;
+                    line-height: 7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .meeting-section{
+        #meeting{
+            &>div{
+                width: 100%;
+
+                &>h1{
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                }
+
+                &>form{
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+
+
+header {
+    width: 100%;
+    padding-top: 10rem;
+    background: radial-gradient(circle closest-side, $blue, $lightBlue 70%);
+    background-color: $darkBlue;
+    display: flex;
+    align-items: center;
+
+    &>.hero {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 4rem 1.5rem;
+
+        &>h1 {
+            color: $white;
+            font-weight: 500;
+            font-size: 9.6rem;
+            font-family: 'Sora', sans-serif;
+        }
+
+        &>h1:nth-of-type(1) {
+            align-self: flex-start;
+
+            &>em {
+                color: $orange;
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+
+        &>h1:nth-of-type(2) {
+            align-self: flex-end;
+
+            &>em {
+                color: $orange;
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+
+        &>div:nth-of-type(1) {
+            align-self: center;
+            width: 50rem;
+            margin: 6rem 0 3rem 0;
+
+            &>p {
+                color: $white;
+                font-weight: 300;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        &>div:nth-of-type(2) {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+
+            &>a:nth-of-type(1) {
+                display: inline-block;
+                color: $white;
+                outline: none;
+                border: none;
+                background-color: $orange;
+                font-weight: 400;
+                font-size: 1.4rem;
+                padding: 1.5rem 3rem;
+                border-radius: .5rem;
+                transition: all .4s;
+                text-decoration: none;
+
+
+                &:hover {
+                    background-color: $darkOrange;
+                    box-shadow: .2rem .2rem 0 $white;
+                }
+            }
+
+            &>a:nth-of-type(2) {
+                color: $orange;
+                font-size: 1.4rem;
+                display: inline-block;
+
+                &:hover {
+                    color: $lightOrange;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    header{
+        &>.hero{
+            display: block;
+            &>h1{
+                font-size: 6rem;
+            }
+            &>div:nth-of-type(1) {
+                width: 55rem;
+                margin: 3.5rem auto;
+                padding-top: 3rem;
+    
+                &>p {
+                    color: $white;
+                    font-weight: 300;
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px){
+    header{
+        &>.hero{
+            &>div:nth-of-type(1){
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        &>.hero{
+
+            &>div:nth-of-type(1){
+                width: 100%;
+            }
+
+            & h1:nth-of-type(1){
+                font-size: 3.5rem;
+                align-self: center;
+                line-height: 5rem;
+            }
+            & h1:nth-of-type(2){
+                font-size: 3.5rem;
+                align-self: center;
+            }
+
+            &>div:nth-of-type(1) {
+                align-self: center;
+                width: 100%;
+                // margin: 3rem;
+    
+                &>p {
+                    color: $white;
+                    font-weight: 300;
+                    font-size: 1.6rem;
+                    line-height: 2.5rem;
+                }
+            }
+
+            &>div:nth-of-type(2){
+                flex-direction: column;
+
+                &>a:nth-of-type(1){
+                    text-align: center;
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    // transition: .4s;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container {
+    
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    // border: 1px solid green;
+}

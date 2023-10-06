@@ -1,0 +1,177 @@
+.pricing-section {
+    background-color: $darkBlue;
+    width: 100%;
+
+    &>#pricing {
+        // border: 1px solid red;
+        font-size: 1.6rem;
+        padding: 10rem 0rem;
+        color: $white;
+
+        &>h1 {
+            // border: 1px solid red;
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 500;
+            font-family: 'Sora', sans-serif;
+        }
+
+        &>p {
+            // border: 1px solid red;
+            text-align: center;
+            font-size: 1.7rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        &>div {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 .5rem;
+
+            &>div {
+                // border: 1px solid red;
+                width: 30rem;
+                min-height: 50rem;
+                flex: 1 1 auto;
+                margin: 1rem;
+                padding: 3rem;
+                background-color: #fff;
+                color: #000;
+
+                &>p {
+                    // border: 1px solid red;
+                    font-size: 1.6rem;
+                    // font-weight: 500;
+                }
+
+                &>div:nth-of-type(1) {
+                    // border: 1px solid red;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    &>h1 {
+                        // border: 1px solid red;
+                        font-size: 6rem;
+                        margin: 2rem 0;
+                        font-weight: 600;
+                    }
+
+                    &>p {
+                        // border: 1px solid red;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                    }
+                }
+
+                &>div:nth-of-type(2) {
+                    // border: 1px solid red;
+                    margin-bottom: 4rem;
+
+                    &>h4 {
+                        // border: 1px solid red;
+                        font-size: 2.5rem;
+                        font-weight: 500;
+                    }
+
+                    &>ul {
+                        // border: 1px solid red;
+                        list-style: none;
+
+                        &>li {
+                            // border: 1px solid red;
+                            margin: 2rem 0;
+                            background-image: url(../images/list-arrow.png);
+                            background-position: 0 0;
+                            background-size: 19px;
+                            padding-left: 30px;
+                            background-repeat: no-repeat;
+
+                            &>a {
+                                // border: 1px solid red;
+                                text-decoration: none;
+                                font-weight: 300;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+
+                &>a {
+                    // border: 1px solid red;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    margin: 1rem auto;
+                    background-color: $orange;
+                    padding: 1rem 2rem;
+                    text-decoration: none;
+                    color: $white;
+                    border-radius: 4px;
+                    align-self: center;
+                    transition: all .4s;
+
+                    &:hover {
+                        background-color: $darkOrange;
+                    }
+                }
+
+                &>p:last-child {
+                    // border: 1px solid red;
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: 992px){}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        #pricing {
+            padding: 0;
+            padding-top: 6rem;
+
+            &>h1 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .pricing-section {
+        #pricing {
+
+            &>div {
+                &>div {
+                    &>div:nth-of-type(1) {
+                        &>h1 {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 346px) {
+    .pricing-section {
+        #pricing {
+            &>div {
+                &>div {
+                    &>div:nth-of-type(1) {
+                        &>h1 {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+
+
+@mixin dropdown(){
+    &>ul {
+        display: none;
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+        width: 12rem;
+        list-style: none;
+        background-color: $white;
+    
+        &>li{
+            &>a{
+                width: 100%;
+                color: #000;
+                font-weight: 300;
+                font-size: 1.5rem;
+                align-self: center;
+                display: inline-block;
+                text-decoration: none;
+                padding: .8rem 0 .8rem 1.5rem;
+                border-bottom: 1px solid $orange;
+    
+                &:hover{
+                    background-color: $lightOrange;
+                }
+            }
+        }
+
+        &.link{
+            display: block;
+        }
+    }
+   
+}
+
+
+
+@mixin menu(){
+    &>.menu{
+        cursor: pointer;
+        width: 2.5rem;
+        height: 2.4rem;
+        display: none;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 2rem;
+            height: 2px;
+            background-color: #fff;
+            top: 4px;
+            box-shadow: 0 6px 0 #fff;
+            transition: .2s;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 2rem;
+            height: 2px;
+            background-color: #fff;
+            bottom: 6px;
+            transition: .2s;
+        }
+
+        &.active-menu{
+            &::before{
+                translate: 0 6px;
+                box-shadow: 0 0 0 #fff;
+                rotate: -45deg;
+            }
+
+            &::after{
+                translate: 0 -6px;
+                rotate: 45deg;
+            }
+        }
+    }
+}

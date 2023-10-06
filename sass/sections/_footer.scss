@@ -1,0 +1,185 @@
+footer {
+    background-color: $darkBlue;
+    width: 100%;
+
+    &>.footer {
+        color: $white;
+        font-size: 1.6rem;
+
+        &>div:nth-of-type(1) {
+            background-color: #153742;
+            padding: 10rem;
+            border-radius: 5rem;
+            box-shadow: 1.5rem 1.5rem 0 $orange;
+            margin-bottom: 1.5rem;
+
+            &>h1 {
+                font-size: 12rem;
+                font-family: 'Sora', sans-serif;
+                font-weight: 500;
+                letter-spacing: -.6rem;
+                line-height: 13rem;
+            }
+
+            &>div {
+                margin-top: 6rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &>a:nth-of-type(1) {
+                    display: inline-block;
+                    width: 30rem;
+                    text-align: center;
+                    background-color: $orange;
+                    padding: 1.5rem 2rem;
+                    text-decoration: none;
+                    color: $white;
+                    border-radius: 4px;
+                    font-size: 2rem;
+                    align-self: center;
+                    transition: all .4s;
+
+                    &:hover {
+                        background-color: $darkOrange;
+                        box-shadow: .2rem .2rem 0 $white
+                    }
+                }
+
+                &>a:nth-of-type(2){
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &>div:nth-of-type(2){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5rem 0;
+            position: relative;
+
+            &>div:nth-of-type(1){
+                color: #fff;
+                font-size: 1.4rem;
+                font-weight: 300;
+                &>a{
+                    color: $lightOrange;
+                    margin: 0 .4rem;
+                }
+            }
+
+            &>div:nth-of-type(2){
+                &>a{
+                    color: #fff;
+                    margin-left: 1rem;
+                    font-size: 1.4rem;
+                    font-weight: 300;
+                    text-decoration: none;
+                }
+            }
+
+            &>div:nth-of-type(3){
+                width: 5rem;
+                height: 5rem;
+                border-radius: 5rem;
+                rotate: -135deg;
+                position: fixed;
+                bottom: 5rem;
+                right: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &>a{
+                   &>img{
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                   }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    footer{
+        &>.footer{
+            &>div:nth-of-type(1){
+                box-shadow: 1rem 1rem 0 $orange;
+                padding: 5rem;
+
+                &>h1 {
+                    font-size: 6.5rem;
+                    font-family: 'Sora', sans-serif;
+                    font-weight: 500;
+                    letter-spacing: -.3rem;
+                    line-height: 7rem;
+                }
+
+                &>div{
+                    &>a:nth-of-type(1){
+                    align-self: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 425px){
+    footer{
+        &>.footer{
+            &>div:nth-of-type(1){
+                box-shadow: .5rem .5rem 0 $orange;
+                border-radius: 2rem;
+                
+                padding: 2rem;
+                &>h1{
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                    letter-spacing: 0;
+                }
+
+                &>div{
+                    margin-top: 3rem;
+                    flex-direction: column;
+                    gap: 2rem;
+                    
+
+                    &>a:nth-of-type(1){
+                        font-size: 1.6rem;
+                        width: 100%;
+                    }
+
+                    &>a:nth-of-type(2){
+                        align-self: flex-start;
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            &>div:nth-of-type(2){
+                padding: 3rem 0;
+                flex-direction: column;
+                gap: 2rem;
+
+                &>div:nth-of-type(1){
+                    align-self: flex-start;
+                    
+                }
+                &>div:nth-of-type(2){
+                    align-self: flex-start;
+
+                }
+            }
+        }
+    }
+}

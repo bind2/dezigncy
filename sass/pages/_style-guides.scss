@@ -1,0 +1,140 @@
+.style-guides-section {
+    background-color: $darkBlue;
+    width: 100%;
+
+    #style-guides {
+        padding: 10rem 2rem;
+        color: #fff;
+
+        &>h1 {
+            font-size: 10rem;
+            font-weight: 500;
+            font-family: 'Sora', sans-serif;
+            margin-top: 2rem;
+        }
+
+        &>div:nth-of-type(1) {
+            width: 100%;
+            display: flex;
+            margin: 5rem 0;
+
+            &>div{
+                height: 10rem;
+                @include flex();
+                justify-content: center;
+                flex: 1;
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+
+            &>div:nth-of-type(1) {
+                background-color: #B1806A;
+            }
+
+            &>div:nth-of-type(2) {
+                background-color: #FEDCB6;
+                color: #000;
+            }
+
+            &>div:nth-of-type(3) {
+                background-color: #00071E;
+            }
+
+            &>div:nth-of-type(4) {
+                background-color: #1C1D20;
+            }
+        }
+
+        &>div:nth-of-type(2) {
+            width: 100%;
+            max-width: 90rem;
+            margin: 0 auto;
+
+            &>p:nth-of-type(1) {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+
+            &>h1, h2, h3, h4, h5, h6{
+                font-weight: 500;
+                font-family: 'Sora', sans-serif;
+                margin: 1rem 0;
+            }
+
+
+            &>h1 {
+                font-size: 10rem;
+            }
+
+            &>h2 {
+                font-size: 5rem;
+            }
+
+            &>h3 {
+                font-size: 3rem;
+            }
+
+            &>h4 {
+                font-size: 2.4rem;
+            }
+
+            &>h5 {
+                font-size: 2rem;
+            }
+
+            &>h6 {
+                font-size: 1.4rem;
+            }
+
+            &>p:nth-of-type(2) {
+                margin: 2rem 0;
+                line-height: 2.4rem;
+                font-size: 1.6rem;
+            }
+
+            &>p:nth-of-type(3) {
+                font-size: 3.2rem;
+                margin: 2rem 0;
+                line-height: 4.8rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .style-guides-section{
+        #style-guides{
+            &>h1{
+                font-size: 5rem;
+            }
+
+            &>div:nth-of-type(1){
+                flex-direction: column;
+
+                &>div{
+                    padding: 4rem 0;
+                }
+            }
+
+            &>div:nth-of-type(2){
+
+                &>h1{
+                    font-size: 6rem;
+                }
+
+                &>h2{
+                    font-size: 4.5rem;
+                }
+
+                &>p:nth-of-type(3){
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                }
+            }
+        }
+    }
+}
+
+// @media (min-width: 425px){}
